@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/myscripts.js"></script>
     <script src="index.js"></script>
+
+    
 <body>
+  <h1>Input Form</h1>  
+  <form> 
+    <label for="1value">First value:</label><br>
+    <input type="text" id="userInput1" name="1value"><br>
+    <label for="2value">Second value:</label><br>
+    <input type="text" id="userInput2" name="2value"><br><br>
+    <input type="reset" value="Reset all"><br><br>
+    <button type="submit">sub1</button>
+    <input type="submit" value="sub2">
+  </form>
+
+  <button onclick="ShowValue()">RESULT</button>
+  <script>
+    function ShowValue() {
+        let val1 = parseInt(userInput1.value);
+        let val2 = parseInt(document.getElementById("userInput2").value);
+            ATry.innerHTML = val1 + val2;
+    }
+
+    </script>
+
+    <p id = "ATry"></p>
 
 </body>
 </html>
